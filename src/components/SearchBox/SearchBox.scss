@@ -1,0 +1,73 @@
+.content{
+    position: relative;
+    min-width: 15vw;
+    display: flex;
+    justify-content: right;
+}
+
+.search-bar{
+    --size: 40px;
+    border: 1px solid rgb(24, 198, 131);
+    display: flex;
+    border-radius: 50px;
+    height: var(--size);
+    width: var(--size);
+    padding: 3px 4px 3px 3px;
+    position: relative;
+    transition: width 300ms ease-in-out ;
+    overflow: hidden;
+    &__input{
+        flex-grow: 1;
+        font-size: 1rem;
+        padding: 0 1em;
+        border: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0 ;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+        line-height: calc(var(--size) - 3px);
+        &:focus{
+            outline: 0;
+        }
+    }
+    &__submit{
+        font-size: 1rem;
+        cursor: pointer;
+        border: 0;
+        background: transparent;
+        border-radius: 50%;
+        width:calc(var(--size) - 10px);
+        height: calc(var(--size) - 10px);
+        margin-left: auto;
+        transition: background 150ms ease-in-out;
+    }
+
+    &:focus-within{
+        width: 100%;
+        .search-bar{
+            border: 1px solid red;
+        }
+        .search-bar__input{
+            opacity: 1;
+            cursor: initial;
+            width: calc(100% - var(--size));  
+        }
+        .search-bar__submit{
+            --greencolor: rgb(24, 198, 131);
+            background: var(--greencolor);
+            color: white;
+            &:focus,&:hover{
+                outline: 0;
+                box-shadow: 0 0 10px rgba(0,0,0,0.25);
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////
+@media only screen and (max-width:830px) {
+    .content{
+        min-width: 45vw;
+    } 
+}

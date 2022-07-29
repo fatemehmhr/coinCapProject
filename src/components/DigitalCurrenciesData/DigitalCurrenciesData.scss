@@ -1,0 +1,100 @@
+.header-digital-currency{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    
+    .dataWrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        
+        .data-digital-currency{
+            width: 100%;
+            display: flex;
+
+            .col-left-data-digital-currency{
+                flex-grow: 1;
+                display: flex;
+                background-color: rgb(255, 255, 255);
+
+                .img-col-left-data-digital-currency{
+                    margin: 34px 0  0 29px;
+                    img{
+                        border-radius: 100%;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .text-col-left-data-digital-currency{
+                    padding: 37px 0 0 30px;
+                   h3{
+                    font-size: 25px;
+                    font-weight: bold;
+                    line-height: 1.2;
+                   }
+                }
+            }
+
+            .col-right-data-digital-currency{
+                flex-grow: 2;
+                display: flex;
+                padding: 38px 0 14px 10px;
+               
+                .columnLeft-right-data-digital-currency{
+                    flex-grow: 1;
+                    h5{
+                        padding: 0 0 20px 0;
+                        justify-content: left;
+                        display: flex;
+                        span{
+                            padding-right: 16px;
+                            font-weight: bold;
+                            color: grey;
+                        }
+                    }  
+                }
+
+                .columnRight-right-data-digital-currency{
+                    flex-grow: 1;
+                    h5{
+                        padding: 0 0 20px 0;
+                        justify-content: left;
+                        display: flex;
+                        span{
+                            padding-right: 16px;
+                            font-weight: bold;
+                            color: grey;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+
+        .chart-digital-currency{
+            border: 1px solid green;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+        }  
+    }
+    
+    .card-digital-currency{
+        background-color: rgb(255, 255, 255);
+        border-radius: 12px;
+        box-shadow: rgb(0 0 0 / 10%) 0px 0px 9px;
+        width: 30%; 
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+

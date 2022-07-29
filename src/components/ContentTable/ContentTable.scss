@@ -1,0 +1,45 @@
+.ant-pagination-item{
+    padding-top:6px ;
+}
+
+.ant-table-cell{
+    padding: 8px !important;
+}
+
+.iconTableImg{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.iconTableLink{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.color-change,.rank-style{
+    text-align: center!important;
+    display: block !important;
+}
+/////////////////////////////////////////////////////////
+@media only screen and (max-width:1081px) {
+    *{
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width:974px){
+    *{
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width:866px){
+    *{
+        font-size: 8px !important;
+    }
+}
+
+
+    

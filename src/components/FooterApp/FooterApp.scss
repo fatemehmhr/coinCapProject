@@ -1,0 +1,48 @@
+.FooterApp{
+    width: 100%;
+    background: rgb(255, 255, 255) linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246)) repeat scroll 0% 0% !important;
+    color: #fff;
+    display: flex;
+   justify-content: center;  
+}
+
+.footerListItem{
+  width: 25%;
+  text-align: left;
+  float: left;
+  .item{
+    a{
+        font-size: 12px;
+        color: #fff;
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    } 
+  }
+  .footer-txt{
+    margin: 0 0 10px 0;
+}
+
+  .itemTitle{
+      font-size: 14px !important;
+      opacity: 1 !important;
+      color: #fff;
+  }
+
+  .listItemSpan{
+      font-size: 8px ;
+      color: #fff;
+      opacity: 0.5;
+      margin: 5px 20px 0 0;
+      display: block;
+  }
+
+  .listItemBox{
+      margin-bottom: 25px; 
+  }
+
+ 
+
+
+
+
